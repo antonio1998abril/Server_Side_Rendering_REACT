@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "27103a87-0c07-48e1-aa2b-a004928a60cb",
+		"name": "Test Practicante Review",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/post",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User",
+						"value": "60273806388adc456c58b85b",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n        \"score\" : \"5\",\r\n        \"comments\": \"fdfdetr\",\r\n        \"product\" :{ \r\n            \"_id\": \"2ee\",\r\n            \"type\": \"re\",\r\n            \"variant\": \"2\"\r\n        }   \r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "{ \r\n    \"review\" : { \r\n        \"score\" : \"3\",\r\n        \"comments\": \"fdfdetr\",\r\n        \"product\" :{ \r\n            \"_id\": \"2ee\",\r\n            \"type\": \"Fdsds\",\r\n            \"variant\": \"2\"\r\n        }\r\n    } \r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/delete/60594517ed01cb0740879d75",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"6053dc5789f3b238ccb3e80c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/delete/60594517ed01cb0740879d75",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delete",
+						"60594517ed01cb0740879d75"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/update/6059815ed111f244bcb76208",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"score\":\"2\",\r\n    \"comments\":\"fer\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/update/6059815ed111f244bcb76208",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update",
+						"6059815ed111f244bcb76208"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/getReview/6059815ed111f244bcb76208",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getReview/6059815ed111f244bcb76208",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getReview",
+						"6059815ed111f244bcb76208"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
